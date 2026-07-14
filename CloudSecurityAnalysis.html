@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security Analysis</title>
+    <link rel="icon" type="image/png" href="Picture/logo.png">
+    <link href="stylesheet.css" rel="stylesheet">
+  </head>
+
+  <body style="min-height:100vh;display:flex;flex-direction:column;">
+    <nav>
+      <div class="logo">
+        <a href="Home.html">
+          <img src="Picture/logo.png" alt="logo" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="CloudOverview.html">Cloud Overview</a></li>
+        <li><a href="CloudSecurityAnalysis.html" class="active">Cloud Security Analysis</a></li>
+        <li><a href="ExpertInsights.html">Expert Insights</a></li>
+        <li><a href="CaseStudy.html">Case Study</a></li>
+        <li><a href="Compliance%26Regulations.html">Compliance & Regulations</a></li>
+        <li><a href="CommunityForum.html">Community Forum</a></li>
+        <li><a href="OurTeam.html">Our Team</a></li>
+        <li><a href="Contact&Feedback.html">Contact & Feedback</a></li>
+        <li><a href="NewsUpdates.html">News Updates</a></li>
+      </ul>
+    </nav>
+
+    <main style="flex:1;">
+      <section class="d-main-section">
+        <div class="d-text-area">
+          <h1>Threat Analysis</h1>
+          <p>Cloud computing, while widely adopted for its scalability and efficiency, is not immune to security threats. Understanding the nature of these threats is critical in assessing the safety of cloud environments.</p>
+          <p>Misconfigurations are one of the most common vulnerabilities in cloud systems. These occur when security settings, such as access controls or firewall rules, are incorrectly set, often leading to unintended data exposure. For instance, improperly configured storage buckets or databases can leave sensitive information publicly accessible.</p>
+          <p>Advanced Persistent Threats (APTs) are highly sophisticated, long-term attacks launched by well-funded groups, often with the intent to steal data or disrupt operations. In the cloud, attackers may leverage compromised credentials or vulnerabilities in applications to gain persistent access and move laterally within the environment without detection.</p>
+          <p>Insider threats refer to security breaches caused by individuals within an organization, such as employees or contractors, who have authorized access to systems and data. These threats can be malicious or accidental. In a cloud environment, where access is often widespread and decentralized, insider threats can lead to significant breaches if not properly monitored and managed.</p>
+        </div>
+      </section>
+
+      <section class="d-centered-section">
+        <div class="d-text-area">
+          <h1>Security Measures</h1>
+          <p>To mitigate these risks, cloud providers and users implement several advanced security mechanisms.</p>
+          <p>Encryption plays a fundamental role in protecting data both at rest and in transit. Cloud providers offer built-in encryption tools that secure data using industry-standard algorithms. Some services even offer customer-managed keys for an extra layer of control.</p>
+          <p>Multi-Factor Authentication (MFA) strengthens identity verification by requiring users to provide two or more verification methods — typically something they know (a password) and something they have (a phone or token). This significantly reduces the risk of unauthorized access, even if credentials are compromised.</p>
+          <p>Zero-Trust Architecture is an evolving security model where no user or device is automatically trusted, even if it originates from inside the network. Access is granted only after strict identity verification and device posture checks. This approach is especially effective in cloud environments, where users may access services from a wide range of locations and devices.</p>
+        </div>
+      </section>
+
+      <section class="last-section">
+        <div class="table-text-area">
+          <div class="table-header">
+            <div class="table-content">
+              <h2>Cloud Provider Security Comparison</h2>
+              <table cellspacing="1" cellpadding="10" border="0">
+                <thead>
+                  <tr>
+                    <th>Security Feature</th>
+                    <th>Amazon Web Services (AWS)</th>
+                    <th>Microsoft Azure (MA)</th>
+                    <th>Google Cloud Platform (GCP)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Data Encryption at Rest & Transit</td>
+                    <td>AES-256 encryption by default, customer key management (KMS)</td>
+                    <td>Built-in encryption with Azure Key Vault for key management</td>
+                    <td>Encryption by default, customer-managed keys via Cloud KMS</td>
+                  </tr>
+                  <tr>
+                    <td>Identity & Access Management (IAM)</td>
+                    <td>Fine-grained policies, IAM roles, temporary credentials</td>
+                    <td>Azure Active Directory, Role-Based Access Control (RBAC)</td>
+                    <td>IAM with roles & policies, support for federated identity</td>
+                  </tr>
+                  <tr>
+                    <td>Multi-Factor Authentication (MFA)</td>
+                    <td>AWS MFA with hardware/software tokens</td>
+                    <td>Azure MFA with biometric, OTP, or authenticator apps</td>
+                    <td>Google Authenticator, U2F security keys, built-in MFA</td>
+                  </tr>
+                  <tr>
+                    <td>Zero-Trust Security Model</td>
+                    <td>AWS Verified Access, Identity Center, micro-segmentation</td>
+                    <td>Microsoft Entra (Zero Trust identity), Conditional Access</td>
+                    <td>BeyondCorp Enterprise (native zero-trust platform)</td>
+                  </tr>
+                  <tr>
+                    <td>Insider Threat Detection</td>
+                    <td>GuardDuty, CloudTrail, behavior-based threat detection</td>
+                    <td>Microsoft Defender for Cloud, Insider Risk Management</td>
+                    <td>Cloud Audit Logs, Chronicle for threat analysis</td>
+                  </tr>
+                  <tr>
+                    <td>Security Certifications</td>
+                    <td>ISO 27001, SOC 1/2/3, PCI DSS, HIPAA</td>
+                    <td>ISO 27001, SOC 1/2/3, FedRAMP, GDPR</td>
+                    <td>ISO 27001, SOC 1/2/3, FedRAMP, HIPAA</td>
+                  </tr>
+                  <tr>
+                    <td>Security Tools & Services</td>
+                    <td>AWS Shield, WAF, Inspector, Macie, Security Hub</td>
+                    <td>Azure Firewall, Sentinel SIEM, DDoS Protection, Key Vault</td>
+                    <td>Cloud Armor, Security Command Center, VirusTotal</td>
+                  </tr>
+                  <tr>
+                    <td>Monitoring & Logging</td>
+                    <td>CloudWatch, CloudTrail, Config</td>
+                    <td>Azure Monitor, Log Analytics, Activity Logs</td>
+                    <td>Cloud Logging, Cloud Monitoring, Audit Logs</td>
+                  </tr>
+                  <tr>
+                    <td>Compliance & Governance</td>
+                    <td>AWS Artifact, Config, Organizations</td>
+                    <td>Azure Policy, Blueprints, Compliance Manager</td>
+                    <td>GCP Assured Workloads, Policy Intelligence, Forseti</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Abdullah Al Noman | Sheikh Saed Hossain Safa | Sharhee Saad Imam. All rights reserved.</p> <br>
+                <p>
+                Empowering innovation and security in the cloud.  
+                | Designed and developed with passion by our dedicated team.  
+                | For inquiries, collaboration, or feedback, please <a href="Contact&Feedback.html">contact us</a>.
+                </p>
+            </div>
+      </footer>
+  </body>
+</html>
